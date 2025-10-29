@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Application Portal</title>
+</head>
+<body>
+  <h1>Welcome to Web Application Portal</h1>
+
+  <h3>Login</h3>
+  <form action="WebAppServlet" method="post">
+    <input type="hidden" name="action" value="login">
+    Username: <input type="text" name="username" required><br><br>
+    Password: <input type="password" name="password" required><br><br>
+    <input type="submit" value="Login">
+  </form>
+
+  <hr>
+  <h3>View Employee Data</h3>
+  <form action="WebAppServlet" method="get">
+    <input type="hidden" name="action" value="employee">
+    Search Employee by ID: <input type="text" name="empid">
+    <input type="submit" value="Search">
+  </form>
+
+  <hr>
+  <h3>Attendance Portal</h3>
+  <a href="attendance.jsp">Go to Attendance Form</a>
+</body>
+</html>
